@@ -21,6 +21,8 @@ body:
         Describe the feature or improvement that you are looking for. The description should 
         explain what problem you are trying to solve, what alternatives you have considered, and 
         describe clearly and concisely what you would like changed.
+    validations:
+      required: true
   - type: input
     id: mc-version
     attributes:
