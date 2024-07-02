@@ -21,3 +21,12 @@ body:
         Describe the feature or improvement that you are looking for. The description should 
         explain what problem you are trying to solve, what alternatives you have considered, and 
         describe clearly and concisely what you would like changed.
+  - type: input
+    id: mc-version
+    attributes:
+      label: Minecraft Version
+      description: >-
+        If you need this update added for a Minecraft version other than latest, list the 
+        version/s here.
+
+        **Example:** `1.20.6`
