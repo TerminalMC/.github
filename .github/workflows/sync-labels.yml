@@ -25,4 +25,5 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npx github-label-sync -a '${{ secrets.GITHUB_TOKEN }}' -l 'https://raw.githubusercontent.com/TerminalMC/.github/HEAD/.github/labels.yml' ${{ github.repository }}
+      - run: curl https://raw.githubusercontent.com/TerminalMC/.github/HEAD/.github/labels.yml -o ./labels.yml
+      - run: npx github-label-sync -a '${{ secrets.GITHUB_TOKEN }}' -l 'labels.yml' ${{ github.repository }}
