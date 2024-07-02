@@ -1,0 +1,23 @@
+name: Feature Request
+description: "For requesting new features or improvements"
+labels:
+  - S/needs-triage
+  - T/enhancement
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        This form is for requesting new features or improvements, and should not be used for bug 
+        reports, port requests, or other issues. For general support or if you're unsure, please 
+        ask on [Discord](https://discord.terminalmc.dev).
+        
+        Before you open a new issue, please check to see if a similar request already exists 
+        (either open or closed).
+  - type: textarea
+    id: description
+    attributes:
+      label: Request Description
+      description: >-
+        Describe the feature or improvement that you are looking for. The description should 
+        explain what problem you are trying to solve, what alternatives you have considered, and 
+        describe clearly and concisely what you would like changed.
