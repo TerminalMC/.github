@@ -2,7 +2,6 @@ name: Feature Request
 description: "For requesting new features or improvements"
 labels:
   - S/needs-triage
-  - T/enhancement
 body:
   - type: markdown
     attributes:
@@ -10,25 +9,40 @@ body:
         This form is for requesting new features or improvements, and should not be used for bug 
         reports, port requests, or other issues. For general support or if you're unsure, please 
         ask on [Discord](https://discord.terminalmc.dev).
-        
-        Before you open a new issue, please check to see if a similar request already exists 
-        (either open or closed).
+  - type: checkboxes
+    id: preliminary-checks
+    attributes:
+      label: Before you open a new issue;
+      options:
+        - label: >-
+            **Are you requesting either a new feature or an improvement of existing 
+            functionality?** If you want to request an update or backport, please use Discord.
+          required: true
+        - label: >-
+            **Have you checked whether a similar request already exists (either open or closed)?** 
+            If your idea has been requested previously, please comment there instead.
+          required: true
+        - label: >-
+            **Have you checked whether the feature already exists on the latest version?** If you
+            want to request that an existing feature be backported, please use Discord.
+          required: true
   - type: textarea
     id: description
     attributes:
       label: Request Description
       description: >-
-        Describe the feature or improvement that you are looking for. The description should 
-        explain what problem you are trying to solve, what alternatives you have considered, and 
-        describe clearly and concisely what you would like changed.
+        Explain in detail what you would like added or changed, and the reason. If you have 
+        considered alternative options, include them as well.
+        
+        Requests that lack detail or do not include a clear reason are less likely to be 
+        considered.
     validations:
       required: true
   - type: input
     id: mc-version
     attributes:
-      label: Minecraft Version
+      label: Minecraft Version (optional)
       description: >-
-        If you need this update added for a Minecraft version other than latest, list the 
-        version/s here.
+        If you need this update on a Minecraft version other than latest, list the version/s here.
 
-        **Example:** `1.20.6`
+        **Example:** `1.21.4`
