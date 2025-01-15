@@ -1,7 +1,0 @@
-{
-  "name": "Check Build",
-  "description": "Builds a Gradle project on Linux and Windows.",
-  "filePatterns": [
-    "build.gradle"
-  ]
-}

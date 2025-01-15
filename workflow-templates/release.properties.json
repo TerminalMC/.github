@@ -1,7 +1,0 @@
-{
-  "name": "Release",
-  "description": "Builds and publishes a Gradle project.",
-  "filePatterns": [
-    "build.gradle"
-  ]
-}
