@@ -41,12 +41,6 @@
   aliases: []
 
 
-
-- name: S/accepted
-  color: '0E8A16'
-  description: 'Status: Request accepted'
-  aliases: []
-
 - name: S/available
   color: '006B75'
   description: 'Status: Available for community contribution'
@@ -57,10 +51,10 @@
   description: 'Status: Blocked by another event'
   aliases: []
 
-- name: S/fixed
+- name: S/complete
   color: '0E8A16'
-  description: 'Status: Fixed'
-  aliases: []
+  description: 'Status: Complete, awaiting release'
+  aliases: [fixed]
 
 - name: S/info-needed
   color: 'FBCA04'
@@ -69,7 +63,7 @@
 
 - name: S/in-progress
   color: '0052CC'
-  description: 'Status: Assigned and in progress'
+  description: 'Status: Being worked on'
   aliases: []
 
 - name: S/needs-triage
@@ -90,7 +84,7 @@
   aliases: []
 
 - name: T/compat
-  color: '36210B'
+  color: '490839'
   description: 'Type: Compatibility'
   aliases: []
 
@@ -112,4 +106,9 @@
 - name: T/security
   color: 'B60205'
   description: 'Type: Security issue'
+  aliases: []
+  
+- name: T/translation
+  color: '8C02DA'
+  description: 'Type: Translation'
   aliases: []
