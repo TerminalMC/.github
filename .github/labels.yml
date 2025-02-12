@@ -41,14 +41,14 @@
   aliases: []
 
 - name: P/medium
-  color: '36210B'
+  color: '9B5003'
   description: 'Priority: Medium, time-sensitive but not urgent'
   aliases: []
 
 
 
 - name: S/accepted
-  color: '006B75'
+  color: '172B72'
   description: 'Status: Accepted but not assigned'
   aliases: []
 
@@ -60,32 +60,32 @@
 - name: S/finished
   color: '0E8A16'
   description: 'Status: Complete, awaiting release'
-  aliases: [fixed]
-
-- name: S/info-needed
-  color: 'FBCA04'
-  description: 'Status: Awaiting further information'
-  aliases: []
-
+  aliases: [fixed,complete]
+  
 - name: S/in-progress
-  color: '0052CC'
+  color: '36210B'
   description: 'Status: Being worked on'
   aliases: []
 
-- name: S/needs-triage
-  color: '36210B'
-  description: 'Status: Needs triage'
+- name: S/info-needed
+  color: '4A4800'
+  description: 'Status: Awaiting further information'
   aliases: []
 
+- name: S/needs-triage
+  color: 'D4C31A'
+  description: 'Status: Needs triage'
+  aliases: []
+  
 
-
+  
 - name: T/addition
-  color: '006B75'
+  color: '139399'
   description: 'Type: New feature'
   aliases: []
 
 - name: T/bug
-  color: 'D93F0B'
+  color: 'A83400'
   description: 'Type: Bug'
   aliases: []
 
