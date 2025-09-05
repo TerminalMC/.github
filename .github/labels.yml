@@ -1,120 +1,127 @@
 - name: E/duplicate
   color: 'BFD4F2'
   description: 'Closed: Same as another'
-  aliases: []
+  aliases: [ ]
 
 - name: E/external
   color: 'BFD4F2'
   description: 'Closed: External issue'
-  aliases: []
+  aliases: [ ]
 
 - name: E/invalid
   color: 'BFD4F2'
   description: 'Closed: Not an issue'
-  aliases: []
+  aliases: [ ]
 
 - name: E/no-action
   color: 'BFD4F2'
   description: 'Closed: Not actionable or inadequate information'
-  aliases: []
-  
+  aliases: [ ]
+
 - name: E/scope
   color: 'BFD4F2'
   description: 'Closed: Out of scope'
-  aliases: []
+  aliases: [ ]
+
+- name: E/stale
+  color: 'BFD4F2'
+  description: 'Closed: Stale'
+  aliases: [ ]
 
 - name: E/wontfix
   color: 'BFD4F2'
   description: 'Closed: Will not be worked on'
-  aliases: []
+  aliases: [ ]
 
 
+- name: P/critical
+  color: 'B60205'
+  description: 'Priority: Critical, requires immediate attention'
+  aliases: [ ]
 
 - name: P/high
-  color: 'B60205'
-  description: 'Priority: High, for immediate attention'
-  aliases: []
+  color: 'A83400'
+  description: 'Priority: High'
+  aliases: [ ]
 
 - name: P/low
-  color: '006B75'
+  color: '172B72'
   description: 'Priority: Low, not time-sensitive'
-  aliases: []
+  aliases: [ ]
 
 - name: P/medium
-  color: '9B5003'
-  description: 'Priority: Medium, time-sensitive but not urgent'
-  aliases: []
-
+  color: '006B75'
+  description: 'Priority: Medium'
+  aliases: [ ]
 
 
 - name: S/accepted
   color: '172B72'
-  description: 'Status: Accepted but not assigned'
-  aliases: []
+  description: 'Status: Accepted or confirmed'
+  aliases: [ ]
 
 - name: S/blocked
   color: '97988B'
-  description: 'Status: Blocked by another event'
-  aliases: []
+  description: 'Status: Blocked by something else'
+  aliases: [ ]
 
-- name: S/finished
+- name: S/pending-release
   color: '0E8A16'
-  description: 'Status: Complete, awaiting release'
-  aliases: [fixed,complete]
-  
+  description: 'Status: Finished, pending release'
+  aliases: [ fixed,complete,finished ]
+
 - name: S/in-progress
   color: '36210B'
   description: 'Status: Being worked on'
-  aliases: []
+  aliases: [ ]
 
 - name: S/info-needed
   color: '4A4800'
   description: 'Status: Awaiting further information'
-  aliases: []
+  aliases: [ ]
 
 - name: S/needs-triage
   color: 'D4C31A'
   description: 'Status: Needs triage'
-  aliases: []
-  
+  aliases: [ ]
 
-  
+
 - name: T/addition
   color: '139399'
   description: 'Type: New feature'
-  aliases: []
+  aliases: [ ]
 
 - name: T/bug
   color: 'A83400'
   description: 'Type: Bug'
-  aliases: []
+  aliases: [ ]
 
 - name: T/compat
   color: '490839'
   description: 'Type: Compatibility'
-  aliases: []
+  aliases: [ ]
 
 - name: T/enhancement
   color: '0052CC'
   description: 'Type: Enhancement or optimization'
-  aliases: []
+  aliases: [ ]
 
 - name: T/fix
   color: '0E8A16'
-  description: 'Type: Issue fix'
-  aliases: []
+  description: 'Type: Bugfix'
+  aliases: [ ]
 
 - name: T/port
   color: '5319E7'
   description: 'Type: Upgrade or downgrade game version'
-  aliases: []
+  aliases: [ ]
 
 - name: T/security
   color: 'B60205'
-  description: 'Type: Security issue'
-  aliases: []
-  
+  description: 'Type: Security'
+  aliases: [ ]
+
 - name: T/translation
   color: '8C02DA'
   description: 'Type: Translation'
-  aliases: []
+  aliases: [ ]
