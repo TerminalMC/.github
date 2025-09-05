@@ -1,0 +1,22 @@
+name: Blank issue
+description: Create a new issue from scratch
+labels:
+  - S/needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Before using this form, please check that a relevant issue template or
+        alternative communication channel does not already exist.
+        
+        If you use this form inappropriately, such as for requesting support
+        when a dedicated channel has already been provided, you may be blocked
+        from opening issues in future.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Add a description
+      placeholder: Type your description here...
+    validations:
+      required: true
