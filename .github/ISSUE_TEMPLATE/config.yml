@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Update or backport request
+  - name: Mod update or backport request
     url: https://discord.terminalmc.dev
-    about: For requests involving version changes, please use Discord
+    about: For requests involving mod version changes, please use Discord
   - name: Support enquiry, question or discussion
     url: https://discord.terminalmc.dev
     about: For any other communication, please use Discord
