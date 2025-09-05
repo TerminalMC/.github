@@ -6,8 +6,9 @@ body:
   - type: markdown
     attributes:
       value: >-
-        Before using this form, please check that a relevant issue template or
+        🛑 Before using this form, please check that a relevant issue template or
         alternative communication channel does not already exist.
+        
         
         If you use this form inappropriately, such as for requesting support
         when a dedicated channel has already been provided, you may be blocked
