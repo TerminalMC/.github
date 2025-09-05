@@ -35,7 +35,7 @@ body:
     attributes:
       label: Checklist
       options:
-        - label: This is not a help or support request.
+        - label: This is not a support or help request.
           required: true
         - label: This issue exists on the latest release for my Minecraft version.
           required: true
