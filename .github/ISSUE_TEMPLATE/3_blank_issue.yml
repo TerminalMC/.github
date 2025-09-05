@@ -6,13 +6,12 @@ body:
   - type: markdown
     attributes:
       value: >-
-        🛑 Before using this form, please check that a relevant issue template or
-        alternative communication channel does not already exist.
+        🛑 Before using this form, please check that a relevant issue template or alternative
+        communication channel does not already exist.
         
         
-        If you use this form inappropriately, such as for requesting support
-        when a dedicated channel has already been provided, you may be blocked
-        from opening issues in future.
+        If you use this form inappropriately, such as for requesting support when a dedicated
+        support channel has already been provided, you may be blocked from opening issues in future.
 
   - type: textarea
     id: description
