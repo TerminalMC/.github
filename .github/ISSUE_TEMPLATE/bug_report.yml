@@ -101,7 +101,7 @@ body:
       description: >-
         If the game is crashing, please upload the crash report to [mclo.gs](https://mclo.gs) and
         paste the link here. Even if you have already provided a log file, a crash report may
-        contain unique information.
+        contain additional information.
 
 
         **Hint:** Crash reports are located in the `crash-reports` folder of your Minecraft
