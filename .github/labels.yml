@@ -108,7 +108,7 @@
 
 - name: T/fix
   color: '0E8A16'
-  description: 'Type: Bugfix'
+  description: 'Type: Bug fix'
   aliases: [ ]
 
 - name: T/port
