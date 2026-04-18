@@ -1,3 +1,11 @@
+# name        - (required) - label name
+# color       - (optional) - hex color code
+# description - (optional) - label description
+# aliases     - (optional) - a list of label names which, if found, will be
+#                            updated or deleted to match this label
+# delete      - (optional) - whether to delete all labels matching the name or
+#                            any of the aliases
+
 - name: E/duplicate
   color: 'BFD4F2'
   description: 'Closed: Same as another'
@@ -33,46 +41,37 @@
   description: 'Closed: Will not be worked on'
   aliases: [ ]
 
+#
+# Priority
+#
 
 - name: P/critical
   color: 'B60205'
   description: 'Priority: Critical, requires immediate attention'
   aliases: [ ]
 
-- name: P/high
+- name: P/higher
   color: 'A83400'
-  description: 'Priority: High'
-  aliases: [ ]
+  description: 'Priority: Higher than normal'
+  aliases: [ P/high ]
 
-- name: P/low
-  color: '172B72'
-  description: 'Priority: Low, not time-sensitive'
-  aliases: [ ]
-
-- name: P/medium
+- name: P/normal
   color: '006B75'
-  description: 'Priority: Medium'
-  aliases: [ ]
+  description: 'Priority: Normal'
+  aliases: [ P/medium ]
 
-
-- name: S/accepted
+- name: P/lower
   color: '172B72'
-  description: 'Status: Accepted or confirmed'
-  aliases: [ ]
+  description: 'Priority: Lower than normal'
+  aliases: [ P/low ]
 
-- name: S/blocked
-  color: '97988B'
-  description: 'Status: Blocked by something else'
-  aliases: [ ]
+#
+# Status
+#
 
-- name: S/pending-release
-  color: '0E8A16'
-  description: 'Status: Finished, pending release'
-  aliases: [ fixed,complete,finished ]
-
-- name: S/in-progress
-  color: '36210B'
-  description: 'Status: Being worked on'
+- name: S/needs-triage
+  color: 'D4C31A'
+  description: 'Status: Needs triage'
   aliases: [ ]
 
 - name: S/info-needed
@@ -80,11 +79,27 @@
   description: 'Status: Awaiting further information'
   aliases: [ ]
 
-- name: S/needs-triage
-  color: 'D4C31A'
-  description: 'Status: Needs triage'
+- name: S/accepted
+  color: '172B72'
+  description: 'Status: Accepted or verified'
   aliases: [ ]
 
+- name: S/blocked
+  color: '97988B'
+  description: 'Status: Blocked by something else'
+  aliases: [ ]
+
+- name: S/in-progress
+  color: '36210B'
+  description: 'Status: Being worked on'
+  aliases: [ ]
+
+- name: S/pending-release
+  delete: true
+
+#
+# Type
+#
 
 - name: T/addition
   color: '139399'
@@ -113,7 +128,7 @@
 
 - name: T/port
   color: '5319E7'
-  description: 'Type: Upgrade or downgrade game version'
+  description: 'Type: Support another game version'
   aliases: [ ]
 
 - name: T/security
